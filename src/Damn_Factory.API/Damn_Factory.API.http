@@ -1,0 +1,6 @@
+@Damn_Factory.API_HostAddress = http://localhost:5094
+
+GET {{Damn_Factory.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
