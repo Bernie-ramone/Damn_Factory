@@ -14,7 +14,7 @@ namespace Damn_Factory.API.ContextFactory
                 .Build();
 
             var builder = new DbContextOptionsBuilder<RepositoryContext>()
-                .UseSqlServer(configuration.GetConnectionString("SqlConnection"));
+                .UseSqlServer(configuration.GetConnectionString("SqlConnection"), b => b.MigrationsAssembly("Damn_Factory.API"));
 
             return new RepositoryContext(builder.Options);
         }

@@ -12,4 +12,4 @@
 
 4. Repository Pattern
 4.1 add Context Class
-4.2 
+4.2 Migrtion and Initial data seed.
