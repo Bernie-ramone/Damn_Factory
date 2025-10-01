@@ -13,3 +13,21 @@
 4. Repository Pattern
 4.1 add Context Class
 4.2 Migrtion and Initial data seed.
+         
+    public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
+    {
+        protected RepositoryContext _repositoryContext;
+
+        protected RepositoryBase(RepositoryContext repositoryContext)
+        {
+            _repositoryContext = repositoryContext;
+        }
+
+        VS
+
+          public abstract class RepositoryBase<T>(RepositoryContext repositoryContext) : IRepositoryBase<T> where T : class
+    {
+        protected RepositoryContext _repositoryContext = repositoryContext;
+
+
+56 complete the repos for each entity and add the repo manager
