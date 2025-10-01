@@ -8,4 +8,8 @@
 2.2 Add ServiceExtension.cs and create CorsConfiguration method
 2.3 Add CORS config to pipeline in Program.cs
 
-3. Logging service
+3. Logging service done 
+
+4. Repository Pattern
+4.1 add Context Class
+4.2 
